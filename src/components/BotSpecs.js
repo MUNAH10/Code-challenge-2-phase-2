@@ -50,24 +50,28 @@ function BotSpecs({ bot }) {
                 </div>
               </div>
             </div>
-            <button
+
+            <button>
               className="ui button fluid"
               onClick={() =>
                 console.log("connect this to a function that shows all bots")
               }
-            >
+
               Go Back
             </button>
-            <button
+
+            <button>
               className="ui button fluid"
               onClick={() =>
                 console.log(
                   "connect this to a function that adds this bot to your bot army list"
                 )
               }
-            >
+            
               Enlist
             </button>
+
+          
           </div>
         </div>
       </div>

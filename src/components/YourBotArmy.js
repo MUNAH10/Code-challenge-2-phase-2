@@ -12,6 +12,7 @@ function YourBotArmy({botArmy, removeBot, deleteBot}) {
             <BotCard bot={bot} handleBot={removeBot} handleDeleteBot={deleteBot}/>
           ))}
           Your Bot Army
+          
         </div>
       </div>
     </div>

@@ -1,46 +1,45 @@
 import React from "react";
 
-const botTypeClasses = {
-  Assault: "icon military",
-  Defender: "icon shield",
-  Support: "icon plus circle",
-  Medic: "icon ambulance",
-  Witch: "icon magic",
-  Captain: "icon star",
-};
+// const botTypeClasses = {
+//   Assault: "icon military",
+//   Defender: "icon shield",
+//   Support: "icon plus circle",
+//   Medic: "icon ambulance",
+//   Witch: "icon magic",
+//   Captain: "icon star",
+// };
 
 function BotCard({ bot, handleBot, handleDeleteBot }) {
   return (
-    <div className="ui column">
+    <div className="column">
       <div
-        className="ui card"
+        className="card"
         key={bot.id}
         onClick={() => handleBot(bot)}
       >
+        
         <div className="image">
           <img alt="oh no!" src={bot.avatar_url} />
         </div>
         <div className="content">
           <div className="header">
             {bot.name}
-            <i className={botTypeClasses[bot.bot_class]} />
+            
           </div>
-          <div className="meta text-wrap">
+          <div className="catch-phrase">
             <small>{bot.catchphrase}</small>
           </div>
         </div>
         <div className="extra content">
-          <span>
-            <i className="icon heartbeat" />
+          <p className="health">Health:
             {bot.health}
-          </span>
-
-          <span>
-            <i className="icon lightning" />
+          </p>
+          <p>
+            <i className="damage" />Damage:
             {bot.damage}
-          </span>
+          </p>
           <span>
-            <i className="icon shield" />
+            <i className="amor" />Amor:
             {bot.armor}
           </span>
           <span>
@@ -52,6 +51,7 @@ function BotCard({ bot, handleBot, handleDeleteBot }) {
                 }
               >
                 x
+                
               </button>
             </div>
           </span>
