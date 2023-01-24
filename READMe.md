@@ -10,19 +10,19 @@ This is a project built purposely to learn Props,State, events and data fetching
 ### Getting Started
   This project is hosted hence can be accessed using the
 
-   link below:</u></h2>
+   link below:</u>https://vercel.com/munah10/code-challenge-2-phase-2</h2>
 
 ## To run this mini-project locally, Ensure you have :
   nodejs 9.0+
   
 ### 
-   Install Json server using this command;
+   <!-- Install Json server using this command;
         
         * npm i -g json-server*
 
  To spin the server, use this command;
 
-        *json-server --watch db.json* 
+        *json-server --watch db.json*  -->
 
 
 ### Installation and setup
